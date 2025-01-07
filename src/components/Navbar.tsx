@@ -36,22 +36,22 @@ export default function Navbar (){
                     <span>{currentDataTime}</span>
                 </div>
                 <nav className="md:ml-auto flex flex-wrap item-center text-black justify-center">
-                    <Link href={"http://localhost:3000/"} className="mr-5 hover:text-red-700 transition-colors duration-300
+                    <Link href={"/"} className="mr-5 hover:text-red-700 transition-colors duration-300
                     transform hover:scale-105 ">
                         {" "}
                         Home{" "}
                     </Link>
-                    <Link href={"http://localhost:3000/"} className="mr-5 hover:text-red-700 transition-colors duration-300
+                    <Link href={"/about"} className="mr-5 hover:text-red-700 transition-colors duration-300
                     transform hover:scale-105 ">
                         {" "}
                         About{" "}
                     </Link>
-                    <Link href={"http://localhost:3000/"} className="mr-5 hover:text-red-700 transition-colors duration-300
+                    <Link href={"/blog"} className="mr-5 hover:text-red-700 transition-colors duration-300
                     transform hover:scale-105 ">
                         {" "}
                         Blog{" "}
                     </Link>
-                    <Link href={"http://localhost:3000/"} className="mr-5 hover:text-red-700 transition-colors duration-300
+                    <Link href={"/contact"} className="mr-5 hover:text-red-700 transition-colors duration-300
                     transform hover:scale-105 ">
                         {" "}
                         Contact{" "}

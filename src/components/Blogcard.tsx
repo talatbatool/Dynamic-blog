@@ -1,6 +1,6 @@
 import React from "react";
 import {  CardContent, CardHeader, CardTitle } from "../components/ui/card";
-import Image from "next/image";
+
 interface BlogCardProps {
   post: { id: string; title: string; description: string; date: string; imageurl: string };
   isDarkBackground: boolean;

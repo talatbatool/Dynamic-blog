@@ -2,7 +2,6 @@
 import React from "react";
 import Commentsection from "@/components/Commentsection";
 import AuthorCard from "@/components/Authorcard";
-import  {title } from "process"
 import Footer from "@/components/Footer";
 const posts=[
     {
@@ -33,7 +32,7 @@ id:"4",
 title: "portfolio",
 describtion :"The Portfolio Website project is a personal showcase designed to highlight my skills, achievements, and projects in web development and beyond. This project serves as a digital resume, offering visitors an interactive and engaging way to learn about me and my work.",
 date:2024-12-26,
-image:"..portfolio.jpg",
+image:"/images/portfolio.png",
 },
 
 
@@ -43,6 +42,12 @@ describtion :"Traveling is one of life's greatest joys,Traveling is all about cr
 date:2024-12-26,
 image:"../images/travel.jpg",
 },
+{
+  id:"6",
+  title:"ecommerce website",
+  description:"E-commerce website have become increaingly popular in pakistan, offering a convenient way to shop from  the comfort of your own home.e-commerce websites can be customized to reflect a brand's unique identity and value."
+
+}
 
 ]
 export default function PostDetail({ params }: { params: { id: string } }) {
@@ -81,7 +86,7 @@ export default function PostDetail({ params }: { params: { id: string } }) {
         )}
   
         <div className="mt-6 text-lg text-slate-700">
-          {renderParagraphs(post.describtion)}
+          {renderParagraphs(post.description)}
         </div>
         <Commentsection postId={post.id} />
         <AuthorCard />
