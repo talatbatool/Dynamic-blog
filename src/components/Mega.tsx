@@ -12,6 +12,8 @@ export default function Mega() {
       description: "Explore the fundamentals of HTML, the backbone of every webpage.html is a relatively simple language to learnaccesible to beginners.HTML is an open standerd, mainted by the word wide web consortium(w3c), ensuring its contined development",
       date: "2024-12-26",
       imageurl: "/images/html.jpg",
+      
+      
     },
     {
       id: "2",
@@ -43,7 +45,7 @@ export default function Mega() {
       description:
         "Traveling is one of life's greatest joys. Traveling is all about creating memories and experiencing the unknown. By staying prepared and flexible, you can make your trips stress-free and full of adventure.the travel become more enjoyable if everything is planned before travel",
       date: "2024-12-26",
-      imageurl: "/images/travel.jpg",
+      imageurl:"/images/travel.jpg",
     },
     {
       id:"6",

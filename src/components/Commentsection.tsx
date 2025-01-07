@@ -11,7 +11,7 @@ interface CommentProps {
   postId: string;
 }
 
-const Comment = ({ postId }: CommentProps) => {
+const Comment = ({  }: CommentProps) => {
   const [comment, setComment] = useState<Comments[]>([]);
   const [newComment, setNewComment] = useState("");
   const [authoreName, setAuthoreName] = useState("");

@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import {  CardContent, CardHeader, CardTitle } from "../components/ui/card";
+
 
 interface BlogCardProps {
   post: { id: string; title: string; description: string; date: string; imageurl: string };
@@ -14,11 +16,14 @@ export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
       
   
     
-     <img
+     <Image
         src={post.imageurl}
        alt={post.title}
-        className="w-full h-48 object-cover rounded-t-lg"
-      />
+       layout="fill"
+       
+       
+        className="w-full h-48 object-cover rounded-t-lg"></Image>
+      
       <CardTitle className="text-xl font-medium mt-4 text-center">
         {post.title}
       </CardTitle>

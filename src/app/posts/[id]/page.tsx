@@ -45,7 +45,7 @@ image:"../images/travel.jpg",
 {
   id:"6",
   title:"ecommerce website",
-  description:"E-commerce website have become increaingly popular in pakistan, offering a convenient way to shop from  the comfort of your own home.e-commerce websites can be customized to reflect a brand's unique identity and value."
+  describtion:"E-commerce website have become increaingly popular in pakistan, offering a convenient way to shop from  the comfort of your own home.e-commerce websites can be customized to reflect a brand's unique identity and value."
 
 }
 
@@ -86,9 +86,9 @@ export default function PostDetail({ params }: { params: { id: string } }) {
         )}
   
         <div className="mt-6 text-lg text-slate-700">
-          {renderParagraphs(post.description)}
+          {renderParagraphs(post.describtion)}
         </div>
-        <Commentsection postId={post.id} />
+        <Commentsection postId={""} />
         <AuthorCard />
         <Footer/>
       </div>
