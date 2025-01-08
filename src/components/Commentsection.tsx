@@ -1,5 +1,8 @@
 "use client"
 import React, { useState } from 'react';
+import {card, CardContent} from "../components/ui/card"
+import {Input} from "../components/ui/input"
+import {Button} from "../components/ui/button"
 
 interface Comments {
   id: string;
@@ -11,7 +14,7 @@ interface CommentProps {
   postId: string;
 }
 
-const Comment = ({  }: CommentProps) => {
+const Comment = ({postId  }: CommentProps) => {
   const [comment, setComment] = useState<Comments[]>([]);
   const [newComment, setNewComment] = useState("");
   const [authoreName, setAuthoreName] = useState("");

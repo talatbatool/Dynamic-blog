@@ -8,7 +8,7 @@ const posts=[
 
         id:"1",
         title: "HTML block of websevelopment",
-        describtion :"explore the fundamental of html,the  backbone of every webpage",
+        describtion :"HTML (HyperText Markup Language) is the backbone of the web, serving as the foundational language for creating and structuring websites. It defines the structure of web pages by organizing content into headings, paragraphs, images, links, and other elements, making it essential for building any website or web application. HTML is universally understood by web browsers, ensuring compatibility across devices and platforms. It also plays a crucial role in search engine optimization (SEO) by using semantic tags that help search engines understand and index content effectively. Moreover, HTML is beginner-friendly and forms the basis for integrating other web technologies like CSS for styling and JavaScript for interactivity. With its simplicity and versatility, HTML is indispensable for web development, providing a solid foundation for creating accessible, responsive, and user-friendly websites.",
         date:2024-12-26,
         image:"../images/html.jpg",
     },
@@ -16,7 +16,7 @@ const posts=[
 
    { id:"2",
     title: "todolist",
-    describtion :"The To-Do List project is a simple yet powerful tool designed to help users stay organized and manage their tasks effectively. This project highlights the importance of productivity and showcases my ability to develop functional and user-friendly applications using modern web technologies",
+    describtion :"A To-Do List application is a simple yet powerful tool designed to help users organize and manage their daily tasks efficiently. It provides a user-friendly interface where individuals can create, edit, and prioritize tasks, ensuring nothing important is overlooked. By offering features such as task categorization, deadlines, and reminders, a To-Do List app enhances productivity and helps users stay on track with their goals. Whether it's for personal use, work projects, or academic responsibilities, this application simplifies task management, making it easier to break down complex activities into manageable steps. Built using modern web technologies, a To-Do List app demonstrates practical problem-solving skills and the ability to design functional, interactive, and visually appealing solutions tailored to users' needs.",
     date:2024-12-26,
     image:"../images/todolist.jpg",
 },
@@ -38,15 +38,15 @@ image:"/images/portfolio.png",
 
 {     id:"5",
 title: "travel",
-describtion :"Traveling is one of life's greatest joys,Traveling is all about creating memories and experiencing the unknown. By staying prepared and flexible, you can make your trips stress-free and full of adventure.",
+describtion:"Travel is an enriching experience that allows individuals to explore new places, cultures, and perspectives, creating memories that last a lifetime. It fosters personal growth by pushing people out of their comfort zones, offering opportunities to learn about different traditions, cuisines, and ways of life. Whether it's the excitement of discovering bustling cities, the serenity of nature, or the thrill of adventure, traveling opens the door to unique experiences that broaden horizons and inspire creativity. It also strengthens relationships, as shared journeys often bring friends and families closer together. By embracing the unknown, staying flexible, and being prepared, travel becomes a transformative journey filled with discovery, relaxation, and inspiration.",
 date:2024-12-26,
 image:"../images/travel.jpg",
 },
 {
   id:"6",
   title:"ecommerce website",
-  describtion:"E-commerce website have become increaingly popular in pakistan, offering a convenient way to shop from  the comfort of your own home.e-commerce websites can be customized to reflect a brand's unique identity and value."
-
+  describtion:"E-commerce website have become increaingly popular in pakistan, offering a convenient way to shop from  the comfort of your own home.e-commerce websites can be customized to reflect a brand's unique identity and value.",
+image:"../images/image1.jpg"
 }
 
 ]
@@ -80,15 +80,15 @@ export default function PostDetail({ params }: { params: { id: string } }) {
             alt={post.title}
             width={1200} // Adjust width
             height={800} // Adjust height
-            className="w-full h-auto rounded-md mt-4"
+            className="w-full h-auto rounded-md mt-4"/>
             
-          />
+          
         )}
   
         <div className="mt-6 text-lg text-slate-700">
           {renderParagraphs(post.describtion)}
         </div>
-        <Commentsection postId={""} />
+        <Commentsection postId={"post.id"} />
         <AuthorCard />
         <Footer/>
       </div>

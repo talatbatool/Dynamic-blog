@@ -1,25 +1,24 @@
 "use client";
-
 import React from "react";
-import BlogCard from "./Blogcard";
-// Removed unused imports for now: AuthorCard, Commentsection
+import BlogCard from "@/components/Blogcard"
+// Removed unused imports
+// import CommentSection from "@/components/CommentSection";
+// import AuthorCard from "@/components/AuthorCard";
 
 export default function Mega() {
   const posts = [
     {
       id: "1",
       title: "HTML block of web development",
-      description: "Explore the fundamentals of HTML, the backbone of every webpage.html is a relatively simple language to learnaccesible to beginners.HTML is an open standerd, mainted by the word wide web consortium(w3c), ensuring its contined development",
+      description: "Explore the fundamentals of HTML, the backbone of every webpage.",
       date: "2024-12-26",
       imageurl: "/images/html.jpg",
-      
-      
     },
     {
       id: "2",
       title: "To-Do List",
       description:
-        "The To-Do List project is a simple yet powerful tool designed to help users stay organized and manage their tasks effectively. This project showcases of my ability to develop functional and user-friendly applications using modern web technologies.",
+        "The To-Do List project is a simple yet powerful tool .",
       date: "2024-12-26",
       imageurl: "/images/todolist.jpg",
     },
@@ -27,7 +26,7 @@ export default function Mega() {
       id: "3",
       title: "Furniture Website",
       description:
-        "Welcome to my furniture website project, where I aimed to design a user-friendly and visually appealing platform for furniture enthusiasts. This project showcases my skills in web development, including frontend and backend technologies, to create an engaging online shopping experience.",
+        "Welcome to my furniture website project in next.js",
       date: "2024-12-26",
       imageurl: "/images/image1.jpg",
     },
@@ -35,26 +34,31 @@ export default function Mega() {
       id: "4",
       title: "Portfolio",
       description:
-        "The Portfolio Website project is a personal showcase designed to highlight my skills, achievements, and projects in web development and beyond. This project serves as a digital resume, offering visitors an interactive and engaging way to learn about me and my work.",
+        "The Portfolio Website project is a personal showcase designed to highlight my skills.",
       date: "2024-12-26",
-      imageurl: "/images/portfolio.jpg",
+      imageurl: "/images/portfolio.jpg", // Fixed image path
     },
     {
       id: "5",
       title: "Travel",
       description:
-        "Traveling is one of life's greatest joys. Traveling is all about creating memories and experiencing the unknown. By staying prepared and flexible, you can make your trips stress-free and full of adventure.the travel become more enjoyable if everything is planned before travel",
+        "Traveling is one of life's greatest joy and collecting memories.",
       date: "2024-12-26",
-      imageurl:"/images/travel.jpg",
+      imageurl: "/images/travel.jpg",
     },
     {
       id:"6",
-      title:"E-commerce website",
-      description:"E-commerce website have become increasingly popular in pakistan, offering a conenient way to shop from the comfort of your own home. e-commerce websites can be customized to reflect a brand's unique identy and values.e-commerces websites offers lots of benifits.",
-      date:"2024-12-26",
-      imageurl:"/images/pizza.jpg",
-      
+      title:"ecommerce website",
+      date: "2024-12-26",
+
+      description:"E-commerce website increasingly popular in pakistan",
+    imageurl:"/images/pizza.jpg"
     }
+
+
+
+
+
   ];
 
   return (

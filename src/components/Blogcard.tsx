@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import {  CardContent, CardHeader, CardTitle } from "../components/ui/card";
-
+import { card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 
 interface BlogCardProps {
   post: { id: string; title: string; description: string; date: string; imageurl: string };
@@ -11,24 +9,20 @@ interface BlogCardProps {
 export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
   return (
     <CardHeader
-    className={`p-4 ${isDarkBackground ? "bg-white text-black":"bg-cyan-200 text-slate-800"} rounded-lg transition-transform  transform hover: shadow-xl duration-300`}>
-    
-      
-  
-    
-     <Image
+      className={`p-4 ${
+        isDarkBackground ? "bg-slate-800 text-white" : "text-slate-800 bg-white"
+      } rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}
+    >
+      <img
         src={post.imageurl}
-       alt={post.title}
-       layout="fill"
-       
-       
-        className="w-full h-48 object-cover rounded-t-lg"></Image>
-      
+        alt={post.title}
+        className="w-full h-48 object-cover rounded-t-lg"
+      />
       <CardTitle className="text-xl font-medium mt-4 text-center">
         {post.title}
       </CardTitle>
       <br />
-     <CardContent className="text-center">
+      <CardContent className="text-center">
         <p>{post.description}</p>
       </CardContent>
 
@@ -50,7 +44,7 @@ export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
         >
           Read More
         </a>
-     </div>
+      </div>
     </CardHeader>
   );
 }
