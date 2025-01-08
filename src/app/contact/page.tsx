@@ -17,7 +17,7 @@ const Contact = () => {
                     Drop me a line, give me a call or send me message by submitting the form.
                 </p>
                 <div className='flex gap-3 items-center'>
-                  xyz@gmail.com
+                  talatbatool@gmail.com
 
                 </div>
                 <div className='flex gap-3 items-center'data-aos="zoom-out-right">
