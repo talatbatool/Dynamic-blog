@@ -1,5 +1,5 @@
 import React from "react";
-import { card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import {  CardContent, CardHeader, CardTitle } from "../components/ui/card";
 
 interface BlogCardProps {
   post: { id: string; title: string; description: string; date: string; imageurl: string };
