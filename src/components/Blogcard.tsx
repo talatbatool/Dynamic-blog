@@ -16,8 +16,10 @@ export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
       <img
         src={post.imageurl}
         alt={post.title}
-        className="w-full h-48 object-cover rounded-t-lg"
-      />
+        
+        
+        className="w-full h-48 object-cover rounded-t-lg"/>
+      
       <CardTitle className="text-xl font-medium mt-4 text-center">
         {post.title}
       </CardTitle>
